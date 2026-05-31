@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  :root { --ink:#f4f1e8; --muted:#b9c2bd; --accent:#7fd1a8; --board:#16201b; --board2:#0e1612; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1280px; height:640px; }
+  .card {
+    width:1280px; height:640px; position:relative; overflow:hidden;
+    background:
+      radial-gradient(120% 140% at 12% 0%, #1d2a23 0%, var(--board) 45%, var(--board2) 100%);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    padding:74px 84px;
+    display:flex; flex-direction:column; justify-content:space-between;
+  }
+  /* faint chalk grid, a nod to the "blackboard" */
+  .card::before {
+    content:""; position:absolute; inset:0;
+    background-image:
+      linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+    background-size:64px 64px; pointer-events:none;
+  }
+  .top { display:flex; align-items:center; gap:14px; position:relative; z-index:1; }
+  .pill {
+    font-size:21px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--accent); font-weight:700;
+  }
+  .pill .dot { color:var(--muted); font-weight:400; }
+  .headline { position:relative; z-index:1; }
+  .headline h1 {
+    font-size:74px; line-height:1.06; font-weight:800; letter-spacing:-.02em;
+    max-width:1040px;
+  }
+  .headline h1 .em { color:var(--accent); }
+  .sub {
+    margin-top:30px; font-size:31px; line-height:1.32; color:var(--muted);
+    font-weight:450; max-width:1010px;
+  }
+  .sub code {
+    font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace;
+    color:var(--ink); background:rgba(127,209,168,.13);
+    border:1px solid rgba(127,209,168,.28); border-radius:8px;
+    padding:2px 12px; font-size:27px;
+  }
+  .foot { display:flex; align-items:center; justify-content:space-between; position:relative; z-index:1; }
+  .repo {
+    font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace;
+    font-size:26px; color:var(--ink); font-weight:600;
+  }
+  .repo .slash { color:var(--accent); }
+  .source { font-size:20px; color:var(--muted); text-align:right; line-height:1.4; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="top">
+      <span class="pill">/decompose <span class="dot">·</span> a Claude Code command</span>
+    </div>
+
+    <div class="headline">
+      <h1>Most &ldquo;AI agents&rdquo; should<br>really be <span class="em">one good prompt.</span></h1>
+      <p class="sub">A 1986 paper explains why &mdash; and the <code>/decompose</code> command walks you through deciding, one plain question at a time, before you build.</p>
+    </div>
+
+    <div class="foot">
+      <span class="repo">github.com/SaifAlYounan<span class="slash">/</span>professor-nii-principles-building-assistant</span>
+      <span class="source">Grounded in H. Penny Nii&rsquo;s<br>Blackboard Model &middot; 1986</span>
+    </div>
+  </div>
+</body>
+</html>
