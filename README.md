@@ -30,7 +30,7 @@ Fair question to ask of anything called an "AI design assistant." Here's the hon
 **What it is *not* (the limitations, stated plainly):**
 
 - **It produces a blueprint, not a system.** It tells you *what* to build, not *how*. The hard engineering — making each specialist reliable, prompting it, testing it — is untouched when the session ends. The command says this out loud rather than pretending the design is the finish line.
-- **It's grounded in one framework** (Nii's blackboard model). That model fits problems shaped like "several semi-independent experts contributing to an evolving shared picture." If your problem isn't shaped that way, the framework adds nothing — and the command will tell you so instead of forcing it.
+- **It's grounded in one framework** (Nii's blackboard model). That model fits problems shaped like "several semi-independent experts contributing to an evolving shared picture." If your problem isn't shaped that way, the framework adds nothing — and the command's first gate is built to send you back to something simpler rather than force a team you don't need.
 - **It's deliberately slow.** One question at a time, waiting for your real answer each turn. If you already know your design, that will feel like overhead. The pace is the point: it's a thinking tool, not a code generator.
 
 The blunt test: feed it a real problem. Either it tells you something non-obvious about whether to split it up, or it says "this is one prompt, go" in about three questions and saves you from over-engineering. Both are wins. It only feels gimmicky if you feed it nothing.
