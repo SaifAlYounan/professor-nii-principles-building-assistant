@@ -4,8 +4,6 @@ A Claude Code command that helps you design an AI system **the right way, before
 
 Most people wiring together "AI agents" skip the only questions that matter: *Should this even be several specialists? What do they share? Who decides what runs next?* Forty years ago, Nii answered those questions for a whole generation of systems. This tool turns her framework into an interactive design session — in plain language, for people who are experts in their own field but not in computer science.
 
-*Built by **Alexios van der Slikke-Kirillov**, Member of LegalQuants. Free and open source under the [MIT License](LICENSE).*
-
 ---
 
 ## What's in here
