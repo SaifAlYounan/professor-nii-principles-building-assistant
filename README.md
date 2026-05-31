@@ -4,6 +4,8 @@ A Claude Code command that helps you design an AI system **the right way, before
 
 Most people wiring together "AI agents" skip the only questions that matter: *Should this even be several specialists? What do they share? Who decides what runs next?* Forty years ago, Nii answered those questions for a whole generation of systems. This tool turns her framework into an interactive design session — in plain language, for people who are experts in their own field but not in computer science.
 
+*Built by **Alexios van der Slikke-Kirillov**, Member of LegalQuants. Free and open source under the [MIT License](LICENSE).*
+
 ---
 
 ## What's in here
@@ -116,3 +118,11 @@ You type `/decompose my contract review system` and it walks you through Nii's f
 H. Penny Nii. "The Blackboard Model of Problem Solving and the Evolution of Blackboard Architectures." *AI Magazine* 7(2), Summer 1986. (See also Part 2: "Blackboard Application Systems and a Knowledge Engineering Perspective," *AI Magazine* 7(3), August 1986.)
 
 This project summarizes and operationalizes that work for educational use; all credit for the framework is Nii's.
+
+---
+
+## License
+
+Released under the **MIT License** — free to use, copy, modify, and share. See [`LICENSE`](LICENSE).
+
+Built by **Alexios van der Slikke-Kirillov**, Member of LegalQuants. The Nii framework it operationalizes is the work of H. Penny Nii; this project claims no ownership over it.
